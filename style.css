@@ -13,7 +13,7 @@
                             .container {}
                             
                             header {
-                                background: url(/imgs/bg-pattern-intro-desktop.svg) no-repeat;
+                                background: url(./imgs/bg-pattern-intro-desktop.svg) no-repeat;
                                 background-position-x: -20vw;
                                 background-position-y: -160vh;
                                 background-size: 190%;
