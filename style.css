@@ -17,7 +17,7 @@
                                 background-position-x: -20vw;
                                 background-position-y: -160vh;
                                 background-size: 190%;
-                                background-color: #ff545d;
+                                background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
                                 border-bottom-left-radius: 5rem;
                                 min-height: 40rem;
                             }
