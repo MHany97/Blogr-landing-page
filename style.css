@@ -26,7 +26,7 @@
                             
                             header {
                                 background: url(./imgs/bg-pattern-intro-desktop.svg), linear-gradient(to right, rgba(255, 135, 111, 1), rgba(252, 62, 77, 1));
-                                background-repeat: no-repeat, no-repeat;
+                                /* background-repeat: no-repeat, no-repeat; */
                                 background-position-x: -22vw;
                                 background-position-y: -160vh;
                                 background-size: 190%;
@@ -40,7 +40,7 @@
                             }
                             
                             #head .dropdown-item {
-                                color: #000000;
+                                color: black;
                             }
                             
                             nav li {
@@ -343,6 +343,15 @@
                                     background-position-x: -40vw;
                                     background-position-y: -20vh;
                                 }
+                                .drop-Dw-mob {
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                                .sign-up-top {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                }
                                 .main {
                                     min-height: 150vh;
                                 }
@@ -350,4 +359,7 @@
                                     display: none;
                                 }
                                 /* service stylling */
+                                .service {
+                                    min-height: 50rem;
+                                }
                             }
