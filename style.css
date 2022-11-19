@@ -10,16 +10,29 @@
                                 background: white
                             }
                             
-                            .container {}
+                            .navbar-toggler {
+                                box-shadow: none;
+                                border: none;
+                            }
+                            
+                            .navbar-toggler:focus {
+                                box-shadow: none;
+                                /* border-color: rgba(0, 0, 0, .125); */
+                            }
+                            
+                            .container {
+                                padding-left: 5%;
+                            }
                             
                             header {
-                                background: url(./imgs/bg-pattern-intro-desktop.svg) no-repeat;
-                                background-position-x: -20vw;
+                                background: url(./imgs/bg-pattern-intro-desktop.svg), linear-gradient(to right, rgba(255, 135, 111, 1), rgba(252, 62, 77, 1));
+                                /* background-repeat: no-repeat, no-repeat; */
+                                background-position-x: -22vw;
                                 background-position-y: -160vh;
                                 background-size: 190%;
-                                background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
                                 border-bottom-left-radius: 5rem;
                                 min-height: 40rem;
+                                /* background-position: to bottom right; */
                             }
                             
                             #head a {
@@ -31,6 +44,24 @@
                             }
                             
                             nav li {
+                                color: white;
+                            }
+                            
+                            #sign-up {
+                                text-decoration: none;
+                                font-size: 1rem;
+                                font-weight: 500;
+                                margin: 0.7%;
+                                border-radius: 22px;
+                                transition: .7s ease;
+                                padding: 0.7em 2em;
+                                background-color: #ffffff;
+                                color: #dd4753;
+                                border: none;
+                            }
+                            
+                            #sign-up:hover {
+                                background-color: #fe7c88;
                                 color: white;
                             }
                             
@@ -70,9 +101,7 @@
                             /* main section styling */
                             
                             .main-btn {
-                                color: white;
                                 display: inline-block;
-                                background-color: #e39608;
                                 text-decoration: none;
                                 font-size: 1em;
                                 font-weight: 500;
@@ -80,23 +109,36 @@
                                 padding: 0.5em 1em;
                                 letter-spacing: 1px;
                                 border-radius: 22px;
-                                transition: .9s ease;
-                                box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+                                transition: .7s ease;
                             }
                             
-                            .main-btn:hover {
-                                color: #222222;
-                                background-color: #d78e08;
-                                transform: scale(1.05);
-                                box-shadow: 5px 5px 20px #222222;
+                            #btn1 {
+                                padding: 0.7em 0.5em;
+                                background-color: #ffffff;
+                                color: #dd4753;
+                                border: none;
+                            }
+                            
+                            #btn1:hover {
+                                background-color: #fe7c88;
+                                color: white;
+                            }
+                            
+                            #btn2:hover {
+                                background-color: #ffffff;
+                                color: #dd4753;
+                            }
+                            
+                            #btn2 {
+                                padding: 0.7em 1em;
+                                background-color: transparent;
+                                color: white;
+                                border: 0.05rem solid;
+                                border-radius: 22px;
                             }
                             
                             .main-btn::selection {
                                 background-color: transparent;
-                            }
-                            
-                            #btn1 {
-                                padding: 0.5em 0.5em;
                             }
                             /* MainTitle Section styling */
                             
@@ -243,9 +285,9 @@
                                 color: white;
                                 text-decoration: underline;
                             }
-                            /* Mobile Control */
+                            /* Desktop Pics Control */
                             
-                            @media screen and (min-width: 995px) {
+                            @media only screen and (min-width: 992px) {
                                 #navbarNavDropdown {
                                     padding-left: 8%;
                                 }
@@ -263,12 +305,15 @@
                                     margin-top: 2%;
                                 }
                                 /* MainTitle Section styling */
+                                .mob-illust {
+                                    display: none;
+                                }
                                 .main-sec-head {
                                     margin-bottom: 3.5vh;
                                 }
                                 .main-sec-text {
                                     margin-top: 13vh;
-                                    width: 78%;
+                                    width: 100%;
                                 }
                                 .main-text1 {
                                     margin-bottom: 10vh;
@@ -285,3 +330,24 @@
                                 }
                             }
                             /* Mobile conontrol */
+                            
+                            @media only screen and (max-width: 992px) {
+                                body {
+                                    text-align: center;
+                                    align-content: center;
+                                    align-items: center;
+                                }
+                                /* main section stylling */
+                                header {
+                                    background-size: 220%, 190%;
+                                    background-position-x: -40vw;
+                                    background-position-y: -20vh;
+                                }
+                                .main {
+                                    min-height: 150vh;
+                                }
+                                .desk-illus {
+                                    display: none;
+                                }
+                                /* service stylling */
+                            }
