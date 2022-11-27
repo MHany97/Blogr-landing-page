@@ -343,6 +343,15 @@
                                     background-position-x: -40vw;
                                     background-position-y: -20vh;
                                 }
+                                .drop-Dw-mob {
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                                .sign-up-top {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                }
                                 .main {
                                     min-height: 150vh;
                                 }
@@ -350,4 +359,7 @@
                                     display: none;
                                 }
                                 /* service stylling */
+                                .service {
+                                    min-height: 50rem;
+                                }
                             }
