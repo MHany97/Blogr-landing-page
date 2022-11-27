@@ -25,7 +25,9 @@
                 <nav class="navbar navbar-expand-lg ">
                     <a class="navbar-brand Blogr-Logo" href="#">Blogr</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+                      
+                        <i onclick="changeDropIcon(this)" class="fas fa-bars" style="color: white; font-size: 2rem;" aria-hidden="true" ></i>
+                      
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
@@ -70,10 +72,10 @@
                             <div class="log">
                                 <ul class="navbar-nav">
                                     <li class="nav-item nav-ele">
-                                        <a class="nav-link" href="#">Login</a>
+                                        <a class="nav-link" id="login" href="#">Login</a>
                                     </li>
                                     <li class="nav-item nav-ele">
-                                        <a class="nav-link" href="#">Sign Up</a>
+                                        <button class="nav-link" id="sign-up" href="#">Sign Up</button>
                                     </li>
                                 </ul>
                             </div>
@@ -90,8 +92,8 @@
                             <p class="intro-title"> Grow your audience and build your online brand
                             </p>
                             <div class="btns">
-                                <a href="#" id="btn1" class="main-btn">Start for Free</a>
-                                <a href="#" id="btn2" class="main-btn">Learn More</a>
+                                <button href="#" id="btn1" class="main-btn">Start for Free</button>
+                                <button href="#" id="btn2" class="main-btn">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -101,8 +103,11 @@
         </div>
         <section class="main">
             <div class="container">
-                <h2 class="main-title"> Designed for the future</h2>
                 <div class="row">
+                    <h2 class="main-title"> Designed for the future</h2>
+                    <div class="col-lg-6 col-sm-12 mob-illust">
+                        <img src="./imgs/illustration-editor-mobile.svg " class=" editor-img" alt="Responsive image">
+                    </div>
                     <div class="col-lg-6 col-sm-12">
                         <div class="main-sec-text">
                             <div class="main-text1">
@@ -118,7 +123,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-6 col-sm-12  ">
+                    <div id="desk-illust" class="col-lg-6 col-sm-12 desk-illus">
                         <img src="./imgs/illustration-editor-desktop.svg " class=" editor-img" alt="Responsive image">
                     </div>
                 </div>
