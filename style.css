@@ -354,9 +354,22 @@
                                 }
                                 .main {
                                     min-height: 150vh;
+                                    align-items: center;
+                                    align-content: center;
+                                }
+                                .main-title{
+                                    padding-bottom: 2rem;
                                 }
                                 .desk-illus {
                                     display: none;
+                                }
+                                .mob-illust{
+                                    padding: 0;
+                               
+                                }
+                                .main-sec-head{
+                                    padding-top: 3rem;
+                                    margin-bottom: 3rem;
                                 }
                                 /* service stylling */
                                 .service {
