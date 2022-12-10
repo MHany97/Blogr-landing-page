@@ -168,14 +168,10 @@
                             /* features section */
                             
                             .service {
-                                width: 100%;
-                                padding: 8rem 8rem;
-                                position: relative;
                                 background: hsl(237, 17%, 21%);
                                 display: flex;
                                 align-items: center;
                                 max-height: 25rem;
-                                justify-content: space-between;
                                 border-top-right-radius: 6rem;
                                 border-bottom-left-radius: 6rem;
                             }
@@ -194,23 +190,14 @@
                                 z-index: 5;
                             }
                             
-                            .service-left-col .circle-pattern {
-                                position: absolute;
-                                left: -20rem;
-                                top: -50rem;
-                                z-index: 1;
-                                width: 205%;
-                                overflow: hidden;
-                            }
+                            .service-left-col .circle-pattern {}
                             
                             .service-right-col {
-                                flex-basis: 50%;
+                                z-index: 3;
                             }
                             
                             .service-right-col h4 {
-                                font-size: 2.3rem;
                                 color: hsl(0, 0%, 100%);
-                                margin-bottom: 2rem;
                                 font-family: 'Overpass', sans-serif;
                                 font-weight: 600;
                             }
@@ -229,9 +216,6 @@
                                 background-color: white;
                                 z-index: 4;
                                 margin: 0;
-                                padding-top: 15rem;
-                                position: relative;
-                                padding-bottom: 5rem;
                             }
                             
                             .laptop {
@@ -247,14 +231,13 @@
                             }
                             
                             .third-par-text {
-                                width: 78%;
+                                width: 100%;
                                 line-height: 3vh;
                             }
                             /* footer  */
                             
                             footer {
                                 background-color: #24242c;
-                                height: 45vh;
                             }
                             
                             .footer-logo {
@@ -328,6 +311,39 @@
                                     margin-top: -15vh;
                                     margin-left: 4.5vw;
                                 }
+                                /* services section styling */
+                                .service {
+                                    width: 100%;
+                                    position: relative;
+                                    justify-content: space-between;
+                                    padding: 8rem 8rem;
+                                }
+                                .service-right-col {
+                                    flex-basis: 50%;
+                                }
+                                .service-right-col h4 {
+                                    font-size: 2.3rem;
+                                    margin-bottom: 2rem;
+                                    font-family: 'Overpass', sans-serif;
+                                    font-weight: 600;
+                                }
+                                .service-left-col .circle-pattern {
+                                    position: absolute;
+                                    left: -20rem;
+                                    top: -50rem;
+                                    z-index: 1;
+                                    width: 205%;
+                                    overflow: hidden;
+                                }
+                                /* third section styling for desktop */
+                                .third {
+                                    padding-top: 15rem;
+                                    position: relative;
+                                    padding-bottom: 5rem;
+                                }
+                                footer {
+                                    height: 45vh;
+                                }
                             }
                             /* Mobile conontrol */
                             
@@ -353,26 +369,88 @@
                                     justify-content: center;
                                 }
                                 .main {
-                                    min-height: 150vh;
+                                    min-height: 170vh;
                                     align-items: center;
                                     align-content: center;
+                                    z-index: 2;
                                 }
-                                .main-title{
+                                .main-title {
                                     padding-bottom: 2rem;
+                                    padding-top: 8vh;
                                 }
                                 .desk-illus {
                                     display: none;
                                 }
-                                .mob-illust{
+                                .mob-illust {
                                     padding: 0;
-                               
                                 }
-                                .main-sec-head{
+                                .main-sec-head {
                                     padding-top: 3rem;
                                     margin-bottom: 3rem;
                                 }
                                 /* service stylling */
                                 .service {
                                     min-height: 50rem;
+                                    z-index: 3;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    margin-top: -rem;
+                                }
+                                .service-left-col {
+                                    flex-basis: 100%;
+                                    position: relative;
+                                }
+                                .service-left-col .Bg-Pt {}
+                                .service-left-col .phone {
+                                    padding: 0;
+                                    /* position: absolute; */
+                                    left: 0rem;
+                                    width: 100%;
+                                    margin-top: -37rem;
+                                    align-items: center;
+                                    z-index: 5;
+                                }
+                                .service-left-col .circle-pattern {
+                                    /* position: absolute; */
+                                    top: -50rem;
+                                    z-index: 1;
+                                    width: 200%;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    left: -20rem;
+                                    z-index: 1;
+                                    overflow: hidden;
+                                }
+                                .service-right-col {
+                                    flex-basis: 100%;
+                                    padding-top: 30%;
+                                    padding: 2rem 2rem;
+                                    margin-left: -101vw;
+                                    margin-top: 12rem;
+                                    width: 100%;
+                                }
+                                .service-right-col h4 {
+                                    font-size: 3rem;
+                                    margin-bottom: 2rem;
+                                    font-family: 'Overpass', sans-serif;
+                                    font-weight: 400;
+                                    z-index: 4;
+                                }
+                                .service-right-col p {}
+                                .service-left-col .circle-pattern {}
+                                .third {
+                                    margin-top: 2rem;
+                                    padding-bottom: 5rem;
+                                }
+                            }
+                            
+                            @media only screen and (max-width: 470px) {
+                                .main {
+                                    min-height: 200vh;
+                                }
+                                #desk-illus {
+                                    /* max-width: 50%; */
                                 }
                             }
